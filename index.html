@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bea's Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <ul>    
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#fun-facts">Fun Facts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home">
+        <div class="container">
+            <h1>Hello!</h1>
+        </div>
+    </div>
+    <!-- <header>
+
+    </header> -->
+
+
+
+    <div class="box">
+        <div class="eye"></div>
+        <div class="eye"></div>
+    </div>
+
+    <script>
+
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+        function eyeball(){
+          const eye = document.querySelectorAll('.eye');
+          eye.forEach(function(eye){
+            let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+            let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+            let radian = Math.atan2(event.pageX - x, event.pageY - y);
+            let rotation = (radian * (180 / Math.PI * -1)) + 270;
+            eye.style.transform = "rotate("+rotation+"deg)";
+          })
+        }
+      </script>
+
+        
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, earum excepturi cupiditate minima obcaecati ab tenetur! Sunt, recusandae voluptates. Hic optio voluptates ut voluptate culpa ipsa corrupti modi placeat aut!</p>
+        </div>
+    </section>
+
+    <div class="empty-box">
+        <p>EMPTY</p>
+    </div>
+
+    <section id="fun-facts">
+        <div class="container">
+            <h2>Fun Facts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta nesciunt minima illo distinctio dolorum dicta maxime architecto, delectus a quibusdam dignissimos nobis doloremque ad blanditiis, commodi tenetur reprehenderit eos.</p>
+        </div>
+    </section>
+
+    <div class="empty-box">
+        <p>EMPTY</p>
+    </div>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quam id aut optio soluta quod ipsam tenetur. Molestias facilis obcaecati delectus reiciendis eius velit voluptates ipsum, libero, asperiores, odio facere.</p>
+        </div>
+    </section>
+
+
+    <section id="end">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, earum excepturi cupiditate minima obcaecati ab tenetur! Sunt, recusandae voluptates. Hic optio voluptates ut voluptate culpa ipsa corrupti modi placeat aut!</p>
+        </div>
+    </section>
+
+    <div class="empty-box">
+        <p>EMPTY</p>
+    </div>
+
+    <footer id="main-footer">
+		<p>this is the footer</p>
+	</footer>
+</body>
+</html>

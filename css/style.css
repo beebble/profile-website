@@ -1,0 +1,175 @@
+/* *{
+    margin:0;
+    padding: 0;
+} */
+
+body{
+	background: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height:1.6em;
+	margin:0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#navbar{
+	background: #333;
+	color: #fff;
+	position: sticky;
+    top:0;
+	width: 100%;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+/* #navbar a:hover{
+    background-color: #fff;
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+} */
+
+#home{
+    float:left;
+    width:60%;
+	height: 90vh;
+	text-align: center;
+	border: 3px solid green;
+	box-sizing: border-box;
+}
+
+#home h1{
+	vertical-align: middle;
+	padding-top: 30vh;
+	padding-bottom: 30vh;
+}
+
+.box
+{
+    display: flex;
+    float: right;
+    width:40%;
+	/* height: 90vh; */
+	/* background-color: #f2761e; */
+	margin-top: 30vh;
+    /* padding-top: 50px; */
+    position:sticky;
+    top: 80px;
+
+}
+.box .eye 
+{
+    position: relative;
+    /* right: 400px; */
+    width: 180px;
+    height: 180px;
+    display: block;
+    background: #fff;
+    margin: 0 40px; 
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0,0, 0.2), 
+        inset 0 0 15px #f2761e,
+        inset 0 0 25px #f2761e;
+}
+
+.box .eye::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width:  50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    border: 10px solid #000; /*  blue ring around pupil*/
+    box-sizing: border-box;
+}
+
+.empty-box{
+    height: 180px;
+    background-color: transparent;
+    padding:200px;
+}
+
+.container{
+	width: 70%;
+	margin:auto;
+	overflow: hidden;
+}
+
+/*#main-header{
+	background-color: coral;
+	color:#fff;
+	position: fixed;
+	width: 100%;
+}*/
+
+/* 
+#showcase{
+	/* background-image: url('../images/showcase.jpeg'); 
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#showcase h1{
+	color:#fff;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 30px;
+} */
+
+#main{
+	float:left;
+	width: 70%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#sidebar{
+	float:right;
+	width: 30%;
+	background:#333;
+	color:white;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#main-footer{
+	background:#333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+@media(max-width:600px){
+	#main{
+		width: 100%;
+		float: none;
+	}
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+}
