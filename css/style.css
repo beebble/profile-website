@@ -261,6 +261,8 @@ h2{
     background-color: #8daa9d;
     border-color: #0f0e0e;
     color: #0f0e0e;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #contact .circle:hover{
@@ -271,7 +273,11 @@ h2{
 #contact .circle a{
     text-decoration: none;
     font-family: 'raspberie';
-    font-size:40spx;
+    font-size:30px;
+}
+
+#contact .circle a:hover{
+    color:#fbf5f3;
 }
 /* 
 #main{
