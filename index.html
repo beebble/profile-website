@@ -9,23 +9,13 @@
     <nav id="navbar">
         <div class="container">
             <ul>    
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home-box">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#fun-facts">Fun Facts</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
-    <div id="home">
-        <div class="container">
-            <h1>Hello!</h1>
-        </div>
-    </div>
-    <!-- <header>
-
-    </header> -->
-
 
 
     <div class="box">
@@ -37,61 +27,87 @@
 
         document.querySelector('body').addEventListener('mousemove', eyeball);
         function eyeball(){
-          const eye = document.querySelectorAll('.eye');
-          eye.forEach(function(eye){
+        const eye = document.querySelectorAll('.eye');
+        eye.forEach(function(eye){
             let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
             let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
             let radian = Math.atan2(event.pageX - x, event.pageY - y);
             let rotation = (radian * (180 / Math.PI * -1)) + 270;
             eye.style.transform = "rotate("+rotation+"deg)";
-          })
+        })
         }
-      </script>
+    </script>
 
-        
+    <div id="home-box">
+        <div id="home">
+            <div class="container">
+                <h1>Hello!</h1>
+            </div>
+        </div>
+    </div> 
+
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, earum excepturi cupiditate minima obcaecati ab tenetur! Sunt, recusandae voluptates. Hic optio voluptates ut voluptate culpa ipsa corrupti modi placeat aut!</p>
+            <p>Hi! I'm Bea a second year compsci student. Here are some of my favourite things</p>
+            <div class="circle-group">
+                <div class="circle" id="stardew">
+                    <h3>Video Game</h3>
+                </div>
+                <div class="circle" id="shark">
+                    <h3>Animal</h3>
+                </div>
+                <div class="circle" id="smiski">
+                    <h3>Item</h3>
+                </div>
+            </div>
+        
         </div>
-    </section>
 
-    <div class="empty-box">
-        <p>EMPTY</p>
-    </div>
+
+    </section>
 
     <section id="fun-facts">
         <div class="container">
             <h2>Fun Facts</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta nesciunt minima illo distinctio dolorum dicta maxime architecto, delectus a quibusdam dignissimos nobis doloremque ad blanditiis, commodi tenetur reprehenderit eos.</p>
+            <p>I make plushies</p>
+            <p></p>
+            <p>I like to travel here are some places I've visited. (hover pls)</p>
+
+            <div class="circle-group">
+                <div class="circle" id="philippines">
+                    <h3>Philippines</h3>
+                </div>
+                <div class="circle" id="japan">
+                    <h3>Japan</h3>
+                </div>
+                <div class="circle" id="singapore">
+                    <h3>Singapore</h3>
+                </div>
+            </div>
+
         </div>
     </section>
-
-    <div class="empty-box">
-        <p>EMPTY</p>
-    </div>
 
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quam id aut optio soluta quod ipsam tenetur. Molestias facilis obcaecati delectus reiciendis eius velit voluptates ipsum, libero, asperiores, odio facere.</p>
+            <div class="circle-group">
+                <div class="circle">
+                    <a href="https://github.com/beebble">Github</a>
+                </div>
+                <div class="circle">
+                    <a href="bea.delacruz210@gmail.com">Email</a>
+                </div>
+                <!-- <div class="circle" id="singapore">
+                    <h3>Singapore</h3>
+                </div> -->
+            </div>
         </div>
     </section>
-
-
-    <section id="end">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, earum excepturi cupiditate minima obcaecati ab tenetur! Sunt, recusandae voluptates. Hic optio voluptates ut voluptate culpa ipsa corrupti modi placeat aut!</p>
-        </div>
-    </section>
-
-    <div class="empty-box">
-        <p>EMPTY</p>
-    </div>
 
     <footer id="main-footer">
-		<p>this is the footer</p>
+		<p>I see you ;)</p>
 	</footer>
 </body>
 </html>
